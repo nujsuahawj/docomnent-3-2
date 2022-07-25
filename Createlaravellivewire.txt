@@ -1,0 +1,16 @@
+1 create new project
+composer create-project --prefer-dist laravel/laravel example-app
+2 create with livewire
+composer require livewire/livewire
+3 livewire create component
+php artisan make:livewire HomeComponent
+4 create Register and login page by Jetstream
+composer require laravel/Jetstream
+php artisan jetstream:install livewire
+npm install && npm run dev
+5 create table is category
+php artisan make:model Category -m
+6 upload table to database
+php artisan migrate
+7 Run project
+php artisan serve
